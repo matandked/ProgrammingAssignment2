@@ -1,7 +1,14 @@
-## Put comments here that give an overall description of what your
-## functions do
+################################################################
+## tested on:
 
-## Write a short comment describing this function
+##D=matrix(c(3,2,6,4,8,6,9,0,3),nrow=3, ncol=3)
+
+##testM <- makeCacheMatrix(D)
+##cacheSolve(testM)
+
+################################################################
+
+## Function which is able to cache its inverse.
 
 makeCacheMatrix <- function(x = matrix()) {
 
@@ -20,7 +27,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## Function which computes matrix inverse. If data cached previously, it obtain matrix inverse from cache.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
